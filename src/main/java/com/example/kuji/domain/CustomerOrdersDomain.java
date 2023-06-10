@@ -21,6 +21,13 @@ public class CustomerOrdersDomain {
         return response;
     }
 
+    public List<CustomerOrder> postCustomerOrders(CustomerOrder customerOrder) throws Exception {
+
+        List<CustomerOrder> response = dao.post(customerOrder);
+
+        return response;
+    }
+
     
     
 }
